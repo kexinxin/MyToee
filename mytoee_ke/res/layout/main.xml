@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >  
+    <!-- 上面的房间 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_homepage_sound_on"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/sound"
+            />
+      <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/yijianfantui_selector"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="8dp"
+          android:id="@+id/yijian"
+          />
+    </RelativeLayout>
+    <!-- 中间的房间 -->
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+         
+        >
+        <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/pic_startpage_logo"  
+        android:layout_gravity="center_horizontal"
+          android:layout_marginTop="35dp"
+           />
+        <!-- 一男一女独处一室 -->
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+          >
+          <!-- 帅哥头像 -->   
+          <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"  
+          android:background="@drawable/handsome_boy_selector"
+          android:id="@+id/man"
+               /> 
+           <!-- 美女头像 -->
+          <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"  
+          android:background="@drawable/beautiful_girl_selector"
+           android:layout_marginLeft="2dp"
+             android:id="@+id/woman"
+              />
+         
+         </LinearLayout>
+         
+         <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"  
+          android:background="@drawable/gift_selector" 
+            android:layout_marginTop="35dp" 
+             />
+         <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"  
+          android:background="@drawable/more_selector"
+           android:layout_marginTop="5dp"   
+             />
+    </LinearLayout>
+    
+</RelativeLayout>

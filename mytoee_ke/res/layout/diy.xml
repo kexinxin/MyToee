@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 上面的房间用来放左中右的三个按钮 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/homepage_selector" 
+            android:id="@+id/back"
+            
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/save_selector" 
+            android:id="@+id/save"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/share_selector" 
+            android:id="@+id/sh"
+            />
+    </RelativeLayout>
+
+    <!-- 中间的绘图区域 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        android:id="@+id/rl"
+        >
+        
+        
+    </RelativeLayout>
+    <!-- 下面的导航区域 -->
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+<EditText android:id="@+id/etTest"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"
+       />
+    <Button   
+      android:id="@+id/sample_button0" 
+      android:layout_width="fill_parent" android:layout_height="wrap_content" 
+      android:text="确定"/> 
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none"
+            android:scrollbars="none" 
+            android:id="@+id/hsv"
+            >
+		
+            <!-- 单选按钮组 -->
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb0"
+                    style="@style/style1"
+                    android:text="发型" />
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    style="@style/style1"
+                    android:text="脸型" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    style="@style/style1"
+                    android:text="眉毛" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    style="@style/style1"
+                    android:text="眼睛" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    style="@style/style1"
+                    android:text="嘴巴" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    style="@style/style1"
+                    android:text="特征" />
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    style="@style/style1"
+                    android:text="眼镜" />
+
+                <RadioButton
+                    android:id="@+id/rb7"
+                    style="@style/style1"
+                    android:text="衣服" />
+
+                <RadioButton
+                    android:id="@+id/rb8"
+                    style="@style/style1"
+                    android:text="帽子" />
+
+                <RadioButton
+                    android:id="@+id/rb9"
+                    style="@style/style1"
+                    android:text="爱好" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    style="@style/style1"
+                    android:text="背景" />
+
+                <RadioButton
+                    android:id="@+id/rb11"
+                    style="@style/style1"
+                    android:text="气泡" />
+            </RadioGroup>
+    
+        </HorizontalScrollView>
+        <!-- 翻页的控件ViewPager -->
+		<android.support.v4.view.ViewPager
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/vp"
+		    >
+		    
+		    
+		</android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</LinearLayout>
